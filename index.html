@@ -12,9 +12,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="icon" href="content/img/favicon.png"/>
+    <link rel="apple-touch-icon" href="content/img/apple-touch-icon.png"/>
 
 </head>
 
@@ -27,35 +31,41 @@
             <ul class="main-nav-list">
 
                 <li>
-                    <a class="main-nav-link" href="#">How it works </a>
+                    <a class="main-nav-link" href="#how">How it works </a>
 
 
                 </li>
 
                 <li>
-                    <a class="main-nav-link" href="#">Meals </a>
+                    <a class="main-nav-link" href="#meals">Meals </a>
 
 
                 </li>
                 <li>
-                    <a class="main-nav-link" href="#">Testimonials </a>
+                    <a class="main-nav-link" href="#testimonials">Testimonials </a>
 
 
                 </li>
 
                 <li>
-                    <a class="main-nav-link" href="#">Pricing </a>
+                    <a class="main-nav-link" href="#pricing">Pricing </a>
 
 
                 </li>
                 <li>
-                    <a class="main-nav-link nav-cta" href="#">Try for free </a>
+                    <a class="main-nav-link nav-cta" href="#cta">Try for free </a>
 
 
                 </li>
 
             </ul>
         </nav>
+
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav"name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav"name="close-outline"> </ion-icon>
+
+        </button>
 
     </header>
     <main>
@@ -73,8 +83,8 @@
                         make you eat healthy again. Tailored to your personal
                         tastes and nutritional needs.
                     </p>
-                    <a href="#" class="btn btn--full margin-right-sm">Start Eating Well</a>
-                    <a href="#" class="btn btn--outline">learn more &darr;</a>
+                    <a href="#cta" class="btn btn--full margin-right-sm">Start Eating Well</a>
+                    <a href="#how" class="btn btn--outline">learn more &darr;</a>
                     <div class="delivered-meals">
                         <div class="delivered-img">
                             <img src="content/img/customers//customer-1.jpg" alt="customer-photo" />
@@ -116,7 +126,7 @@
             </div>
         </section>
 
-        <section class="section-how">
+        <section class="section-how"  id="how">
 
             <div class="container">
 
@@ -227,7 +237,7 @@
             </div>
         </section>
 
-        <section class="section-meals">
+        <section class="section-meals" id="meals">
 
             <div class="container center-text  ">
 
@@ -339,7 +349,7 @@
             </div>
         </section>
 
-        <section class="section-testimonials">
+        <section class="section-testimonials" id="testimonials">
 
 
             <div class="testimonials-container">
@@ -499,7 +509,7 @@
             </div>
         </section>
 
-        <section class="section-pricing">
+        <section class="section-pricing" id="pricing">
 
 
             <div class="container ">
@@ -679,7 +689,7 @@
 
         </section>
 
-        <section class="section-cta">
+        <section class="section-cta" id="cta">
 
             <div class="container">
 
@@ -778,7 +788,7 @@
                 </ul>
 
                 <p class="copyright">
-                    Copyright &copy; 2026 by Omnifood,
+                    Copyright &copy; <span class="year">2026</span> by Omnifood,
                     Inc. All rights reserved.
 
                 </p>
